@@ -13,6 +13,9 @@ public partial class MainPage : ContentPage
             {"Яичнца", "omlet.png", "hello"},
             {"Яичнца", "omlet.png", "hello"},
             {"Яичнца", "omlet.png", "hello"},
+            {"Яичнца", "omlet.png", "hello"},
+            {"Яичнца", "omlet.png", "hello"},
+            {"Яичнца", "omlet.png", "hello"},
 
         };
         BindingContext = new ReceptViewModel();

@@ -33,7 +33,7 @@ public partial class ChooseProducts : ContentPage
             new Model.Product(products[i, 0], products[i, 1]));
         }
     }
-    private async void DigitClicked(object sender, EventArgs e)
+    private async void GoToShoppinList(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync("ShoppingList");
     }

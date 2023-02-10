@@ -37,17 +37,14 @@
 
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                        <StackLayout Orientation="Horizontal">
                             
-                            <Image VerticalOptions="End"
-                                   Margin="20"
-                                   HorizontalOptions="Center"
+                            <Image Margin="20"
                                    WidthRequest="50"
                                    HeightRequest="50"
                                    Source="{Binding rPath}"/>
-                            <Label VerticalOptions="End"
-                                   HorizontalOptions="Center"
-                                   FontSize="23"
+                            <Label FontSize="23"
+                                   
                                    Text="{Binding rTitle}"/>
 
                         </StackLayout>
