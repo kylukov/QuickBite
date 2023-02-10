@@ -22,7 +22,12 @@
                 FontSize="30"
                 FontFamily=""
                 HorizontalOptions="Center" />
-
+            
+            <ImageButton Source="burger.svg"
+                    Clicked="OnCounterClicked"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center" />
+            
             <Button
                 x:Name="CounterBtn"
                 Text="Выбрать продукты"
