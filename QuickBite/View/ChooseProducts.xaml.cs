@@ -5,6 +5,7 @@ namespace QuickBite;
 public partial class ChooseProducts : ContentPage
 {
     public string gett;
+    public int amt;
     public ChooseProducts()
     {
         string[,] products = new string[,]
@@ -35,10 +36,10 @@ public partial class ChooseProducts : ContentPage
 
         }
     }
-
-    private void DigitClicked(object sender, EventArgs e)
+    private async void DigitClicked(object sender, EventArgs e)
     {
-        gett += (sender as Button).Text;
-        Console.Write(gett);
+        await Shell.Current.GoToAsync("ShoppingList");
     }
+
+
 }

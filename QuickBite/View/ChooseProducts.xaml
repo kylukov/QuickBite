@@ -3,29 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="QuickBite.ChooseProducts"
              Title="Выбор Продукта">
-    <CollectionView x:Name="ProductCollection" ItemsSource="{Binding Products}">
+    <ScrollView>
 
-        <CollectionView.ItemsLayout>
-            <LinearItemsLayout Orientation="Vertical" ItemSpacing="35"/>
-        </CollectionView.ItemsLayout>
+        <CollectionView x:Name="ProductCollection" ItemsSource="{Binding Products}">
 
-        <CollectionView.ItemTemplate>
-            <DataTemplate>
-                <StackLayout>
-                    <Image HorizontalOptions="Center"
-                               WidthRequest="100"
-                               HeightRequest="100"
-                               Source="{Binding Path}"/>
-                    <Label  HorizontalTextAlignment="Center"
-                                FontSize="33"
-                                Text="{Binding Title}"/>
-                    <Button x:Name="{Binding Path}"
-                                Text="+1"
-                                HorizontalOptions="Center"
-                                Clicked="DigitClicked"/>
-                </StackLayout>
-            </DataTemplate>
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical" ItemSpacing="35"/>
+            </CollectionView.ItemsLayout>
 
-        </CollectionView.ItemTemplate>
-    </CollectionView>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Image HorizontalOptions="Center"
+                                   WidthRequest="100"
+                                   HeightRequest="100"
+                                   Source="{Binding Path}"/>
+                        <Label  HorizontalTextAlignment="Center"
+                                    FontSize="33"
+                                    Text="{Binding Title}"/>
+                        <Button x:Name="{Binding Path}"
+                                    Text="+1"
+                                    HorizontalOptions="Center"
+                                    Clicked="DigitClicked"/>
+                    </StackLayout>
+                </DataTemplate>
+                
+            </CollectionView.ItemTemplate>
+            
+        </CollectionView>
+        
+    </ScrollView>
 </ContentPage>

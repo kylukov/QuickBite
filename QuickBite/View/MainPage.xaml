@@ -26,7 +26,6 @@
             <Button
                 x:Name="CounterBtn"
                 Text="Выбрать продукты"
-                SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
         </VerticalStackLayout>
