@@ -61,7 +61,9 @@
 	  <None Remove="Resources\Images\logo.svg" />
 	  <None Remove="Resources\Images\mayo.png" />
 	  <None Remove="Resources\Images\milk.png" />
+	  <None Remove="Resources\Images\omlet.png" />
 	  <None Remove="Resources\Images\pig.png" />
+	  <None Remove="Resources\Images\slivki.png" />
 	  <None Remove="Resources\Images\tomato.png" />
 	</ItemGroup>
 

@@ -4,10 +4,8 @@
              x:Class="QuickBite.MainPage">
 
     <ScrollView>
-
         <VerticalStackLayout
             Spacing="25"
-            Padding="10,0"
             VerticalOptions="Center">
 
             <Image
@@ -19,7 +17,7 @@
             <Label
                 Text="Quick Bite, готовим из того, что есть под рукой"
                 SemanticProperties.HeadingLevel="Level1"
-                FontSize="30"
+                FontSize="23"
                 FontFamily=""
                 HorizontalOptions="Center" />
 
@@ -27,28 +25,30 @@
                 x:Name="CounterBtn"
                 Text="Выбрать продукты"
                 Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
-            <Label 
-                Text="Самые популярные блюда"
-                SemanticProperties.HeadingLevel="Level2"
-                FontSize="30"
-                HorizontalOptions="Center"/>
+                HorizontalOptions="Center"
+                Padding="20"/>
+
+
             <CollectionView x:Name="ReceptCollection" ItemsSource="{Binding Recepts}">
 
                 <CollectionView.ItemsLayout>
-                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="35"/>
+                    <LinearItemsLayout Orientation="Horizontal" ItemSpacing="35"/>
                 </CollectionView.ItemsLayout>
 
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <StackLayout Orientation="Horizontal">
-                            <Image HorizontalOptions="Start"
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            
+                            <Image VerticalOptions="End"
+                                   Margin="20"
+                                   HorizontalOptions="Center"
                                    WidthRequest="50"
                                    HeightRequest="50"
                                    Source="{Binding rPath}"/>
-                            <Label  HorizontalTextAlignment="Center"
-                                    FontSize="33"
-                                    Text="{Binding rTitle}"/>
+                            <Label VerticalOptions="End"
+                                   HorizontalOptions="Center"
+                                   FontSize="23"
+                                   Text="{Binding rTitle}"/>
 
                         </StackLayout>
                     </DataTemplate>

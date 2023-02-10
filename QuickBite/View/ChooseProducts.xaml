@@ -5,7 +5,7 @@
              Title="Выбор Продукта">
     <ScrollView>
 
-        <CollectionView x:Name="ProductCollection" ItemsSource="{Binding Recepts}">
+        <CollectionView x:Name="ProductCollection" ItemsSource="{Binding Products}">
 
             <CollectionView.ItemsLayout>
                 <LinearItemsLayout Orientation="Vertical" ItemSpacing="35"/>

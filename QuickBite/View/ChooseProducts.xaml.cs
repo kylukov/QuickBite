@@ -12,6 +12,7 @@ public partial class ChooseProducts : ContentPage
         {
             {"Яйцо", "egg.png" },
             {"Хлеб", "bread.png" },
+            {"Сливки", "slivki.png" },
             {"Сыр","cheese.png" },
             {"Майонез", "mayo.png" },
             {"Кетчуп", "cetchup.png" },
