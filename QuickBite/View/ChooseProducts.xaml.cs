@@ -25,15 +25,11 @@ public partial class ChooseProducts : ContentPage
         InitializeComponent();
 
         BindingContext = new ProductViewModel();
-        int row = 0;
+
         for (int i = 0; i < products.GetUpperBound(0) + 1; i++)
         {
-            if (i % 2 == 0 && i != 0)
-                row++;
-            Console.WriteLine(row);
             ((ProductViewModel)BindingContext).Products.Add(
-            new Model.Product(products[i, 0], products[i, 1], (i + 1) % 2, row));
-
+            new Model.Product(products[i, 0], products[i, 1]));
         }
     }
     private async void DigitClicked(object sender, EventArgs e)

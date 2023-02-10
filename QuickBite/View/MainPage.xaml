@@ -28,6 +28,34 @@
                 Text="Выбрать продукты"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
+            <Label 
+                Text="Самые популярные блюда"
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="30"
+                HorizontalOptions="Center"/>
+            <CollectionView x:Name="ReceptCollection" ItemsSource="{Binding Recepts}">
+
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="35"/>
+                </CollectionView.ItemsLayout>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Orientation="Horizontal">
+                            <Image HorizontalOptions="Start"
+                                   WidthRequest="50"
+                                   HeightRequest="50"
+                                   Source="{Binding rPath}"/>
+                            <Label  HorizontalTextAlignment="Center"
+                                    FontSize="33"
+                                    Text="{Binding rTitle}"/>
+
+                        </StackLayout>
+                    </DataTemplate>
+
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
         </VerticalStackLayout>
     </ScrollView>
 
