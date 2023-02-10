@@ -22,19 +22,13 @@
                 FontSize="30"
                 FontFamily=""
                 HorizontalOptions="Center" />
-            
-            <ImageButton Source="burger.svg"
-                    Clicked="OnCounterClicked"
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center" />
-            
+
             <Button
                 x:Name="CounterBtn"
                 Text="Выбрать продукты"
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
-
         </VerticalStackLayout>
     </ScrollView>
 

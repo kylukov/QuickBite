@@ -50,6 +50,7 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\beef.png" />
 	  <None Remove="Resources\Images\bread.png" />
+	  <None Remove="Resources\Images\burger.png" />
 	  <None Remove="Resources\Images\cetchup.png" />
 	  <None Remove="Resources\Images\cheese.png" />
 	  <None Remove="Resources\Images\chicken.png" />
