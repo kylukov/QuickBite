@@ -2,11 +2,30 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="QuickBite.ChooseProducts"
-             Title="ChooseProducts">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Выбор Продукта">
+    <CollectionView x:Name="ProductCollection" ItemsSource="{Binding Products}">
+
+        <CollectionView.ItemsLayout>
+            <LinearItemsLayout Orientation="Vertical" ItemSpacing="35"/>
+        </CollectionView.ItemsLayout>
+
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <StackLayout>
+                    <Image HorizontalOptions="Center"
+                               WidthRequest="100"
+                               HeightRequest="100"
+                               Source="{Binding Path}"/>
+                    <Label  HorizontalTextAlignment="Center"
+                                FontSize="33"
+                                Text="{Binding Title}"/>
+                    <Button x:Name="{Binding Path}"
+                                Text="+1"
+                                HorizontalOptions="Center"
+                                Clicked="DigitClicked"/>
+                </StackLayout>
+            </DataTemplate>
+
+        </CollectionView.ItemTemplate>
+    </CollectionView>
 </ContentPage>
