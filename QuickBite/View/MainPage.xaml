@@ -4,33 +4,28 @@
              x:Class="QuickBite.MainPage">
 
     <ScrollView>
+
         <VerticalStackLayout
             Spacing="25"
-            Padding="30,0"
+            Padding="10,0"
             VerticalOptions="Center">
 
             <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+                Source="logo.png"
+                HeightRequest="150"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"/>
 
             <Label
-                Text="Hello, World!"
+                Text="Quick Bite, готовим из того, что есть под рукой"
                 SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
+                FontSize="30"
+                FontFamily=""
                 HorizontalOptions="Center" />
 
             <Button
                 x:Name="CounterBtn"
-                Text="Click me"
+                Text="Выбрать продукты"
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
