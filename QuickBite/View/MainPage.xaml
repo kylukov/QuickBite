@@ -9,8 +9,9 @@
             VerticalOptions="Center">
 
             <Image
+                Margin="60"
                 Source="logo.png"
-                HeightRequest="150"
+                HeightRequest="200"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"/>
 
@@ -18,7 +19,7 @@
                 Text="Quick Bite, готовим из того, что есть под рукой"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="23"
-                FontFamily=""
+                HorizontalTextAlignment="Center"
                 HorizontalOptions="Center" />
 
             <Button
@@ -27,6 +28,39 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center"
                 Padding="20"/>
+
+            <Label
+                Padding="10"
+                Text="Популярное"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="23"
+                FontFamily=""
+                HorizontalOptions="Center" />
+
+             <CollectionView x:Name="ReceptCollection" ItemsSource="{Binding Recepts}">
+
+                 <CollectionView.ItemsLayout>
+                     <LinearItemsLayout Orientation="Horizontal" ItemSpacing="35"/>
+                 </CollectionView.ItemsLayout>
+
+                 <CollectionView.ItemTemplate>
+                     <DataTemplate>
+                         <StackLayout Orientation="Vertical">
+                             <Image HorizontalOptions="Center"
+                                    
+                                    WidthRequest="50"
+                                    HeightRequest="50"
+                                    Source="{Binding rPath}"/>
+                             <Label  HorizontalTextAlignment="Center"
+                                     FontSize="25"
+                                     Text="{Binding rTitle}"/>
+
+                         </StackLayout>
+                     </DataTemplate>
+
+                 </CollectionView.ItemTemplate>
+
+             </CollectionView>
         </VerticalStackLayout>
     </ScrollView>
 
