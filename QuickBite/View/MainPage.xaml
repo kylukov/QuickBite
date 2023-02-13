@@ -10,7 +10,7 @@
 
             <Image
                 Margin="60"
-                Source="logo.png"
+                Source="logo2.png"
                 HeightRequest="200"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"/>
