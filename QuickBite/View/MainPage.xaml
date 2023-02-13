@@ -9,7 +9,6 @@
             VerticalOptions="Center">
 
             <Image
-                Margin="100"
                 Source="logo.png"
                 HeightRequest="150"
                 VerticalOptions="Center"
@@ -28,29 +27,6 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center"
                 Padding="20"/>
-
-
-            <CollectionView x:Name="ReceptCollection" ItemsSource="{Binding Recepts}">
-
-                <CollectionView.ItemsLayout>
-                    <LinearItemsLayout Orientation="Horizontal" ItemSpacing="35"/>
-                </CollectionView.ItemsLayout>
-
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <StackLayout Orientation="Horizontal">
-                            <Image WidthRequest="50"
-                                   HeightRequest="50"
-                                   Source="{Binding rPath}"/>
-                            <Label FontSize="23"
-                                   Text="{Binding rTitle}"/>
-
-                        </StackLayout>
-                    </DataTemplate>
-
-                </CollectionView.ItemTemplate>
-
-            </CollectionView>
         </VerticalStackLayout>
     </ScrollView>
 
