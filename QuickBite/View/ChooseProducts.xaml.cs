@@ -36,18 +36,26 @@ public partial class ChooseProducts : ContentPage
         }
 
     }
-    private async void GoToShoppinList(object sender, EventArgs e)
+    /*
+    private async void GoToShoppingList(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync("ShoppingList");
     }
+    */
 
     private void AddToShoppingList(object sender, EventArgs e)
     {
         items.Add((sender as Button).Text);
+
         foreach (string item in items)
         {
             Console.WriteLine(item);
         }
+    }
+
+    private async void GotoShoppingList(object sendet, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("ShoppingList");
     }
 
 

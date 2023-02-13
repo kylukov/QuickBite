@@ -7,6 +7,10 @@
         <VerticalStackLayout>
             <SearchBar x:Name="searchBar"
                        BackgroundColor="White"/>
+            <AbsoluteLayout>
+                <Button Text="Hello"
+                        Clicked="GotoShoppingList"/>
+            </AbsoluteLayout>
 
             <CollectionView x:Name="ProductCollection" ItemsSource="{Binding Products}">
                 <CollectionView.ItemsLayout>
@@ -20,11 +24,6 @@
                                        WidthRequest="100"
                                        HeightRequest="100"
                                        Source="{Binding Path}"/>
-                            <!--
-                                <Label  HorizontalTextAlignment="Center"
-                                        FontSize="33"
-                                        Text="{Binding Title}"/>
-                            -->
                             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                                 <Button Text="{Binding Title}"
                                         BackgroundColor="White"
