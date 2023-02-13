@@ -10,18 +10,18 @@ public partial class ChooseProducts : ContentPage
     {
         string[,] products = new string[,]
         {
-            {"Яйцо", "egg.png" },
-            {"Хлеб", "bread.png" },
-            {"Сливки", "slivki.png" },
-            {"Сыр","cheese.png" },
-            {"Майонез", "mayo.png" },
-            {"Кетчуп", "cetchup.png" },
-            {"Помидор", "tomato.png" },
-            {"Огурец", "cucmber.png" },
-            {"Молоко", "milk.png" },
-            {"Курица", "chicken.png" },
-            {"Говядина", "beef.png" },
-            {"Свинина", "pig.png" }
+            {"РЇР№С†Рѕ", "egg.png" },
+            {"РҐР»РµР±", "bread.png" },
+            {"РЎР»РёРІРєРё", "slivki.png" },
+            {"РЎС‹СЂ","cheese.png" },
+            {"РњР°Р№РѕРЅРµР·", "mayo.png" },
+            {"РљСѓС‚С‡СѓРї", "cetchup.png" },
+            {"РџРѕРјРёРґРѕСЂ", "tomato.png" },
+            {"РћРіСѓСЂРµС†", "cucmber.png" },
+            {"РњРѕР»РѕРєРѕ", "milk.png" },
+            {"РљСѓСЂРёС†Р°", "chicken.png" },
+            {"Р“РѕРІСЏРґРёРЅР°", "beef.png" },
+            {"РЎРІРёРЅРёРЅР°", "pig.png" }
         };
         InitializeComponent();
 

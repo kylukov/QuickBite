@@ -9,6 +9,7 @@
             VerticalOptions="Center">
 
             <Image
+                Margin="100"
                 Source="logo.png"
                 HeightRequest="150"
                 VerticalOptions="Center"
@@ -38,13 +39,10 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout Orientation="Horizontal">
-                            
-                            <Image Margin="20"
-                                   WidthRequest="50"
+                            <Image WidthRequest="50"
                                    HeightRequest="50"
                                    Source="{Binding rPath}"/>
                             <Label FontSize="23"
-                                   
                                    Text="{Binding rTitle}"/>
 
                         </StackLayout>
