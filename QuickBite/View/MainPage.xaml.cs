@@ -6,8 +6,9 @@ public partial class MainPage : ContentPage
 {
     public MainPage()
     {
-        InitializeComponent();
 
+        InitializeComponent();
+        
         string[,] most_popular = new string[,]
         {
             {"Яичнца", "omlet.png", "hello"},
@@ -24,6 +25,7 @@ public partial class MainPage : ContentPage
             ((ReceptViewModel)BindingContext).Recepts.Add(
             new Model.Recept(most_popular[i, 0], most_popular[i, 1], most_popular[i, 2]));
         }
+        
     }
 
     private async void OnCounterClicked(object sender, EventArgs e)
