@@ -51,6 +51,7 @@ public partial class ChooseProducts : ContentPage
         {
             Console.WriteLine(item);
         }
+        Console.WriteLine("========================");
     }
 
     private async void GotoShoppingList(object sendet, EventArgs e)

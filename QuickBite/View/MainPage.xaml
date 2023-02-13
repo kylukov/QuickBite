@@ -9,7 +9,7 @@
             VerticalOptions="Center">
 
             <Image
-                Margin="55"
+                Margin="0, 65, 0, 60"
                 Source="splashscreen.png"
                 HeightRequest="150"
                 VerticalOptions="End"
@@ -31,7 +31,7 @@
                 Padding="20"/>
 
             <Label
-                Padding="20"
+                Margin="0, 50, 0, 0"
                 Text="Популярное"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="23"
