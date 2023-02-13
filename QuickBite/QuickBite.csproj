@@ -35,10 +35,10 @@
 	</PropertyGroup>
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" />
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appicon.svg" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splashscreen.png" BaseSize="128, 128" />
+		<MauiSplashScreen Include="Resources\Images\splashscreen.png" Color="White" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -68,8 +68,10 @@
 	  <None Remove="Resources\Images\pig.png" />
 	  <None Remove="Resources\Images\slivki.png" />
 	  <None Remove="Resources\Images\tomato.png" />
-	  <None Remove="Resources\Images\logo2.png" />
-	  <None Remove="Resources\Images\logosvg.svg" />
+	  <None Remove="Resources\Images\splashscreen.svg" />
+	  <None Remove="Resources\Images\splashscreen.png" />
+	  <None Remove="Resources\Splash\" />
+	  <None Remove="Resources\Splash\splashscreen.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -86,7 +88,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <BundleResource Include="Resources\Images\logo2.png" />
-	  <BundleResource Include="Resources\Images\logosvg.svg" />
+	  <BundleResource Include="Resources\Images\splashscreen.png" />
+	  <BundleResource Include="Resources\Splash\splashscreen.png" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Resources\Splash\" />
 	</ItemGroup>
 </Project>

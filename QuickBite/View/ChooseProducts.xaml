@@ -6,7 +6,6 @@
     <ScrollView>
         <VerticalStackLayout>
             <SearchBar x:Name="searchBar"
-                       Text="Поиск..."
                        BackgroundColor="White"/>
 
             <CollectionView x:Name="ProductCollection" ItemsSource="{Binding Products}">
@@ -21,14 +20,20 @@
                                        WidthRequest="100"
                                        HeightRequest="100"
                                        Source="{Binding Path}"/>
+                            <!--
                                 <Label  HorizontalTextAlignment="Center"
                                         FontSize="33"
                                         Text="{Binding Title}"/>
-                                <Button x:Name="{Binding Path}"
-                                        Text="+1"
+                            -->
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                <Button Text="{Binding Title}"
+                                        BackgroundColor="White"
+                                        TextColor="Black"
+                                        FontSize="27"
                                         HorizontalOptions="Center"
-                                        Clicked="GoToShoppinList"
+                                        Clicked="AddToShoppingList"
                                         />
+                            </StackLayout>
                             </StackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>

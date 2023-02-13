@@ -9,14 +9,14 @@
             VerticalOptions="Center">
 
             <Image
-                Margin="60"
-                Source="logo2.png"
-                HeightRequest="200"
-                VerticalOptions="Center"
+                Margin="55"
+                Source="splashscreen.png"
+                HeightRequest="150"
+                VerticalOptions="End"
                 HorizontalOptions="Center"/>
 
             <Label
-                Text="Quick Bite, готовим из того, что есть под рукой"
+                Text="Готовим из того, что есть под рукой"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="23"
                 HorizontalTextAlignment="Center"
@@ -25,12 +25,13 @@
             <Button
                 x:Name="CounterBtn"
                 Text="Выбрать продукты"
+                FontSize="20"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center"
                 Padding="20"/>
 
             <Label
-                Padding="10"
+                Padding="20"
                 Text="Популярное"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="23"

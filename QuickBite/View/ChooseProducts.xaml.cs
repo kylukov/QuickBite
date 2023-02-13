@@ -1,11 +1,13 @@
 using QuickBite.ViewModel;
 namespace QuickBite;
-
+using System.Collections.ObjectModel;
 
 public partial class ChooseProducts : ContentPage
 {
     public string gett;
-    public int amt;
+    public int amt = 0;
+    public ObservableCollection<string> items =
+        new ObservableCollection<string>();
     public ChooseProducts()
     {
         string[,] products = new string[,]
@@ -32,10 +34,20 @@ public partial class ChooseProducts : ContentPage
             ((ProductViewModel)BindingContext).Products.Add(
             new Model.Product(products[i, 0], products[i, 1]));
         }
+
     }
     private async void GoToShoppinList(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync("ShoppingList");
+    }
+
+    private void AddToShoppingList(object sender, EventArgs e)
+    {
+        items.Add((sender as Button).Text);
+        foreach (string item in items)
+        {
+            Console.WriteLine(item);
+        }
     }
 
 
