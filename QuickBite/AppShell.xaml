@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Shell
     x:Class="QuickBite.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -20,5 +20,10 @@
         Title="ShoppingList"
         ContentTemplate="{DataTemplate local:ShoppingList}"
         Route="ShoppingList" />
+
+    <ShellContent
+        Title="ReceptPage"
+        ContentTemplate="{DataTemplate local:ReceptPage}"
+        Route="ReceptPage"/>
 
 </Shell>
