@@ -32,5 +32,10 @@ public partial class MainPage : ContentPage
     {
         await Shell.Current.GoToAsync("ChooseProducts");
     }
+
+    private async void ShowDescription(System.Object sender, System.EventArgs e)
+    {
+        await Shell.Current.GoToAsync("ChooseProducts");
+    }
 }
 

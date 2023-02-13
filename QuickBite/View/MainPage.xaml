@@ -46,11 +46,13 @@
                  <CollectionView.ItemTemplate>
                      <DataTemplate>
                          <StackLayout Orientation="Vertical">
-                             <Image HorizontalOptions="Center"
-                                    
+                             <ImageButton
+                                    x:Name="ShowDescription"
+                                    HorizontalOptions="Center"
                                     WidthRequest="50"
                                     HeightRequest="50"
-                                    Source="{Binding rPath}"/>
+                                    Source="{Binding rPath}"
+                                    Clicked="ShowDescription"/>
                              <Label  HorizontalTextAlignment="Center"
                                      FontSize="25"
                                      Text="{Binding rTitle}"/>
