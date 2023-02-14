@@ -11,9 +11,9 @@ public partial class MainPage : ContentPage
         
         string[,] most_popular = new string[,]
         {
-            {"Яичнца", "omlet.png", "hello"},
-            {"Яичнца", "omlet.png", "hello"},
-            {"Яичнца", "omlet.png", "hello"},
+            {"Яичница", "omlet.png", "hello"},
+            {"Курица в сливках", "slivkichicken.png", "hello"},
+            {"Яйца Кокот", "omlet.png", "hello"},
             {"Яичнца", "omlet.png", "hello"},
             {"Яичнца", "omlet.png", "hello"},
             {"Яичнца", "omlet.png", "hello"},
@@ -35,7 +35,7 @@ public partial class MainPage : ContentPage
 
     private async void ShowDescription(System.Object sender, System.EventArgs e)
     {
-        await Shell.Current.GoToAsync("ChooseProducts");
+        await Shell.Current.GoToAsync("ReceptPage");
     }
 }
 

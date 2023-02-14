@@ -72,6 +72,7 @@
 	  <None Remove="Resources\Images\splashscreen.png" />
 	  <None Remove="Resources\Splash\" />
 	  <None Remove="Resources\Splash\splashscreen.png" />
+	  <None Remove="Resources\Images\slivkichicken.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -93,6 +94,7 @@
 	<ItemGroup>
 	  <BundleResource Include="Resources\Images\splashscreen.png" />
 	  <BundleResource Include="Resources\Splash\splashscreen.png" />
+	  <BundleResource Include="Resources\Images\slivkichicken.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Resources\Splash\" />

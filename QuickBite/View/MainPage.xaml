@@ -31,7 +31,7 @@
                 Padding="20"/>
 
             <Label
-                Margin="0, 50, 0, 0"
+                Margin="0, 0, 0, 0"
                 Text="Популярное"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="23"
@@ -41,17 +41,17 @@
              <CollectionView x:Name="ReceptCollection" ItemsSource="{Binding Recepts}">
 
                  <CollectionView.ItemsLayout>
-                     <LinearItemsLayout Orientation="Horizontal" ItemSpacing="35"/>
+                     <LinearItemsLayout Orientation="Horizontal" ItemSpacing="35" />
                  </CollectionView.ItemsLayout>
 
                  <CollectionView.ItemTemplate>
                      <DataTemplate>
-                         <StackLayout Orientation="Vertical">
+                         <StackLayout Orientation="Vertical" WidthRequest="120">
                              <ImageButton
                                     x:Name="ShowDescription"
                                     HorizontalOptions="Center"
-                                    WidthRequest="50"
-                                    HeightRequest="50"
+                                    WidthRequest="100"
+                                    HeightRequest="100"
                                     Source="{Binding rPath}"
                                     Clicked="ShowDescription"/>
                              <Label  HorizontalTextAlignment="Center"

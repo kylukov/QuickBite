@@ -12,17 +12,18 @@ public partial class ChooseProducts : ContentPage
     {
         string[,] products = new string[,]
         {
-            {"Яйцо", "egg.png" },
-            {"Хлеб", "bread.png" },
-            {"Сливки", "slivki.png" },
-            {"Сыр","cheese.png" },
-            {"Майонез", "mayo.png" },
-            {"Кутчуп", "cetchup.png" },
-            {"Помидор", "tomato.png" },
-            {"Огурец", "cucmber.png" },
-            {"Молоко", "milk.png" },
-            {"Курица", "chicken.png" },
-            {"Говядина", "beef.png" },
+            {"Яйцо", "https://cdn-icons-png.flaticon.com/512/5222/5222963.png" },
+            {"Хлеб", "https://cdn-icons-png.flaticon.com/512/3014/3014538.png" },
+            {"Сливки", "https://cdn-icons-png.flaticon.com/512/8008/8008185.png" },
+            {"Сыр","https://cdn-icons-png.flaticon.com/512/517/517561.png" },
+            {"Бекон", "https://cdn-icons-png.flaticon.com/512/7471/7471954.png" },
+            {"Майонез", "https://cdn-icons-png.flaticon.com/512/4383/4383486.png" },
+            {"Кутчуп", "https://cdn-icons-png.flaticon.com/512/3387/3387851.png" },
+            {"Помидор", "https://cdn-icons-png.flaticon.com/512/1202/1202125.png" },
+            {"Огурец", "https://cdn-icons-png.flaticon.com/512/7830/7830699.png" },
+            {"Молоко", "https://cdn-icons-png.flaticon.com/512/6070/6070715.png" },
+            {"Курица", "https://cdn-icons-png.flaticon.com/512/6679/6679109.png" },
+            {"Говядина", "https://cdn-icons-png.flaticon.com/512/1703/1703009.png" },
             {"Свинина", "pig.png" }
         };
         InitializeComponent();
