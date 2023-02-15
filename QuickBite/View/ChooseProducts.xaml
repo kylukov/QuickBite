@@ -5,8 +5,6 @@
              Title="Выбор Продукта">
     <ScrollView>
         <VerticalStackLayout>
-            <SearchBar x:Name="searchBar"
-                       BackgroundColor="White"/>
             <AbsoluteLayout HorizontalOptions="End">
                 <Button Text="Hello"
                         Clicked="GotoShoppingList"
