@@ -1,3 +1,3 @@
 # QuickBite
 MobileApp
-![](https://github.com/kylukov/QuickBite/blob/master/QuickBite/Resources/Promo/90973.jpg)
+<img src="https://github.com/kylukov/QuickBite/blob/master/QuickBite/Resources/Promo/90973.jpg" width="500">
