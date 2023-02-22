@@ -74,8 +74,6 @@
 	  <None Remove="Resources\Splash\splashscreen.png" />
 	  <None Remove="Resources\Images\slivkichicken.png" />
 	  <None Remove="Resources\Splash\splashscreen 2.png" />
-	  <None Remove="Resources\Promo\" />
-	  <None Remove="Resources\Promo\90973.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -98,10 +96,8 @@
 	  <BundleResource Include="Resources\Images\splashscreen.png" />
 	  <BundleResource Include="Resources\Splash\splashscreen.png" />
 	  <BundleResource Include="Resources\Images\slivkichicken.png" />
-	  <BundleResource Include="Resources\Promo\90973.jpg" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Resources\Splash\" />
-	  <Folder Include="Resources\Promo\" />
 	</ItemGroup>
 </Project>
