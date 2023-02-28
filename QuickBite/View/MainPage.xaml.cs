@@ -19,12 +19,8 @@ public partial class MainPage : ContentPage
             {"Яичнца", "omlet.png", "hello"},
 
         };
-        BindingContext = new ReceptViewModel();
-        for (int i = 0; i < most_popular.GetUpperBound(0) + 1; i++)
-        {
-            ((ReceptViewModel)BindingContext).Recepts.Add(
-            new Model.Recept(most_popular[i, 0], most_popular[i, 1], most_popular[i, 2]));
-        }
+        BindingContext = new ReceptViewModel(most_popular);
+
         
     }
 
