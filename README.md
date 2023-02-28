@@ -3,3 +3,8 @@
 
 Вы можете смело забывать о скучных, устаревших рецептах – «QuickBite» – радушно встретят, удивят, адаптируясь как к вашим вкусам так и к более консервативным вкусам.
 <img src="https://github.com/kylukov/QuickBite/blob/master/QuickBite/Resources/Promo/90973.jpg" width="500">
+
+## Системные требования:
+* iOS 10.0+ / Android 5.0+;
+* 64-bit processor;
+* 2 GB RAM.
