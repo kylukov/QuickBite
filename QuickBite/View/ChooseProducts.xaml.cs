@@ -6,6 +6,7 @@ using System.IO;
 public partial class ChooseProducts : ContentPage
 {
     public ObservableCollection<string> items = new();
+
     public ChooseProducts()
     {
         InitializeComponent();
