@@ -1,5 +1,4 @@
-﻿using System;
-namespace QuickBite.Model
+﻿namespace QuickBite.Model
 {
     public class Product
     {

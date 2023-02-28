@@ -1,7 +1,6 @@
-﻿using System;
-namespace QuickBite.Model
+﻿namespace QuickBite.Model
 {
-        public class Recept
+    public class Recept
     {
         public string rTitle { get; set; }
         public string rPath { get; set; }

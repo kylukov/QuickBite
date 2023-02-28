@@ -1,10 +1,5 @@
 ﻿using QuickBite.Model;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace QuickBite.ViewModel
 {
@@ -19,7 +14,7 @@ namespace QuickBite.ViewModel
             {
                 Recepts.Add(new Model.Recept(most_popular[i, 0], most_popular[i, 1], most_popular[i, 2]));
             }
-            
+
         }
     }
 }

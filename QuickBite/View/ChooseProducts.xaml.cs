@@ -1,8 +1,5 @@
 using QuickBite.ViewModel;
 namespace QuickBite;
-using Data;
-using DataBase;
-
 public partial class ChooseProducts : ContentPage
 {
     public string sql_input;

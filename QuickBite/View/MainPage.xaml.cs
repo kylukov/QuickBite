@@ -8,7 +8,7 @@ public partial class MainPage : ContentPage
     {
 
         InitializeComponent();
-        
+
         string[,] most_popular = new string[,]
         {
             {"Яичница", "omlet.png", "hello"},
@@ -21,7 +21,7 @@ public partial class MainPage : ContentPage
         };
         BindingContext = new ReceptViewModel(most_popular);
 
-        
+
     }
 
     private async void OnCounterClicked(object sender, EventArgs e)
