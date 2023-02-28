@@ -74,6 +74,7 @@
 	  <None Remove="Resources\Splash\splashscreen.png" />
 	  <None Remove="Resources\Images\slivkichicken.png" />
 	  <None Remove="Resources\Splash\splashscreen 2.png" />
+	  <None Remove="DataBase\" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -99,5 +100,6 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Resources\Splash\" />
+	  <Folder Include="DataBase\" />
 	</ItemGroup>
 </Project>
