@@ -2,10 +2,12 @@ using QuickBite.ViewModel;
 namespace QuickBite;
 using System.Collections.ObjectModel;
 using System.IO;
+using DataBase;
+using Data;
 
 public partial class ChooseProducts : ContentPage
 {
-    public ObservableCollection<string> items = new();
+    public string sql_input;
 
     public ChooseProducts()
     {
@@ -15,12 +17,16 @@ public partial class ChooseProducts : ContentPage
 
     private void AddToShoppingList(object sender, EventArgs e)
     {
-        items.Add((sender as Button).Text);
         Console.WriteLine((sender as Button).Text);
+        sql_input += (sender as Button).Text + ",";
+        Console.WriteLine(sql_input);
     }
 
     private async void GotoShoppingList(object sendet, EventArgs e)
     {
-        await Shell.Current.GoToAsync("ShoppingList");
+        Console.WriteLine(sql_input.Substring(0, sql_input.Length - 1));
+        // await Shell.Current.GoToAsync("ShoppingList");
+        // Data.Database db = new Database();
+        // Datab.find_receipt(sql_input.Substring(0, sql_input.Length-1));
     }
 }
