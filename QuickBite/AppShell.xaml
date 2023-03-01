@@ -7,22 +7,18 @@
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
-        Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
     <ShellContent
-        Title="ChooseProducts"
         ContentTemplate="{DataTemplate local:ChooseProducts}"
         Route="ChooseProducts" />
 
     <ShellContent
-        Title="ShoppingList"
         ContentTemplate="{DataTemplate local:ShoppingList}"
         Route="ShoppingList" />
 
     <ShellContent
-        Title="ReceptPage"
         ContentTemplate="{DataTemplate local:ReceptPage}"
         Route="ReceptPage"/>
 

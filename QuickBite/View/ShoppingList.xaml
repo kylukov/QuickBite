@@ -4,10 +4,8 @@
              x:Class="QuickBite.ShoppingList"
              Title="ShoppingList">
     <VerticalStackLayout>
-        <Label
-            x:Name="Collection"
-            FontSize="40"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <StackLayout>
+            <Image/>
+        </StackLayout>
     </VerticalStackLayout>
 </ContentPage>

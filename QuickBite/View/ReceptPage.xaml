@@ -1,12 +1,67 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="QuickBite.ReceptPage"
-             Title="ReceptPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             x:Class="QuickBite.ReceptPage">
+    <ScrollView>
+        <VerticalStackLayout>
+            <StackLayout Margin="20,70,20,25">
+                <Image 
+                    Source="https://cdn-icons-png.flaticon.com/512/5222/5222963.png"
+                    HeightRequest="120"/>
+                <Label
+                    Text="Яичница"
+                    FontSize="40"
+                    HorizontalOptions="Center"/>
+
+                <Label Text="Ингридиенты:"
+                       Margin="0, 20, 0, 0"
+                       FontSize="25"/>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://cdn-icons-png.flaticon.com/512/5222/5222963.png" 
+                           HeightRequest="70"
+                           HorizontalOptions="Start"/>
+                    <Label Text="1+"
+                           VerticalOptions="Center"
+                           Margin="10,0,0,0"
+                           FontSize="30"/>
+                </StackLayout>
+                <Label Text="Приготовление:"
+                       Margin="0, 20, 0, 0"
+                       FontSize="25"/>
+                <RadioButton
+                    Content="Налейте растительное масло в чистую сковороду и поставьте на огонь"
+                    />
+                <RadioButton
+                    Content="Разбейте яйца и вылейте их на сковороду, стараясь не повредить желток"
+                    />
+                <RadioButton
+                    Content="Посолите по вкусу и жарьте 2-3 минуты. Лопаткой аккуратно переложите яичницу на тарелку и подавайте на стол"
+                    />
+
+                <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                    <Grid>
+                        <GraphicsView x:Name="ProgressView"
+                          BackgroundColor="{StaticResource Primary}"
+                          HeightRequest="100"
+                          WidthRequest="100"/>
+                        <Button x:Name="ProgressButton"
+                            Text=""
+                            FontSize="32"
+                            FontFamily="fa-regular"
+                            HeightRequest="80"
+                            WidthRequest="80"
+                            CornerRadius="40"
+                            HorizontalOptions="Center"
+                            Clicked="StartButton_OnClicked"
+                            BorderWidth="0"
+                            BackgroundColor="{StaticResource Primary}"/>
+                    </Grid>
+                    <Button x:Name="ResetButton"
+                        Text="Reset"
+                        Clicked="ResetButton_OnClicked"
+                        TextColor="WhiteSmoke"/>
+                </VerticalStackLayout>
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

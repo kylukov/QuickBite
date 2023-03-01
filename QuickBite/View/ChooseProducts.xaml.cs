@@ -24,7 +24,7 @@ public partial class ChooseProducts : ContentPage
     {
         Console.WriteLine(sql_input.Substring(0, sql_input.Length - 1));
 
-        Data.Database db = new Data.Database();
-        Datab.find_receipt(sql_input.Substring(0, sql_input.Length - 1));
+        // Data.Database db = new Data.Database();
+        // Datab.find_receipt(sql_input.Substring(0, sql_input.Length - 1));
     }
 }

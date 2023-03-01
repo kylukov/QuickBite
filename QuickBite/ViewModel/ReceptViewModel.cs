@@ -11,9 +11,7 @@ namespace QuickBite.ViewModel
         {
             Recepts = new ObservableCollection<Recept>();
             for (int i = 0; i < most_popular.GetUpperBound(0) + 1; i++)
-            {
                 Recepts.Add(new Model.Recept(most_popular[i, 0], most_popular[i, 1], most_popular[i, 2]));
-            }
 
         }
     }
