@@ -15,9 +15,24 @@ namespace QuickBite.DataBase
         public static void find_receipt(string stri)
         {
             Database database = new Database();
-            string spisok = stri;
-            MySqlConnection connection = new MySqlConnection("Data Source=DESKTOP;Initial Catalog=ProductsDB;Integrated Security=true");
+
+            MySql.Data.MySqlClient.MySqlConnection connection;
+            string myConnectionString;
+
+            myConnectionString = "server=127.0.0.1;uid=root;" +
+                "pwd=12345;database=ProductsDB";
+
+
+            connection = new MySql.Data.MySqlClient.MySqlConnection();
+            connection.ConnectionString = myConnectionString;
             connection.Open();
+
+            
+            string spisok = stri;
+            /*
+            MySqlConnection Server = ("myServerAddress; Database = myDataBase; Uid = myUsername; Pwd = myPassword;");
+            connection.Open();
+            */
             DataTable table = new DataTable();
 
             string querystring = $"select name_of_receipt, list_products_for_receipt from products where list_products_for_receipt = '{spisok}'";

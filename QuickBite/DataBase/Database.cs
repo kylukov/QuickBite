@@ -10,7 +10,7 @@ namespace Data
 {
     internal class Database
     {
-        MySqlConnection sqlConnection = new MySqlConnection(@"Data Source=DESKTOP;Initial Catalog=ProductsDB;Integrated Security=True");
+        MySqlConnection sqlConnection = new MySqlConnection(@"Server=DESKTOP-J2R10TA;Database=ProductsDB;Uid=myUsername;Pwd=myPassword;");
 
         public void openConnection()
         {

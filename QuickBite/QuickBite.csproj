@@ -102,6 +102,5 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Resources\Splash\" />
-	  <Folder Include="DataBase\" />
 	</ItemGroup>
 </Project>
