@@ -18,7 +18,6 @@ public partial class ReceptPage : ContentPage
     protected override void OnAppearing()
     {
         base.OnAppearing();
-        ProgressButton.Text = "\uf144"; // Play icon - workaround because setting it in xaml broke the build for some reason
         ProgressView.Drawable = _progressArc;
     }
 
@@ -68,7 +67,7 @@ public partial class ReceptPage : ContentPage
         _progress = 0;
         _progressArc.Progress = 100;
         ProgressView.Invalidate();
-        ProgressButton.Text = "\uf144";
+        ProgressButton.Text = "180";
     }
 }
 

@@ -4,10 +4,11 @@
              x:Class="QuickBite.ReceptPage">
     <ScrollView>
         <VerticalStackLayout>
-            <StackLayout Margin="20,70,20,25">
+            <StackLayout Margin="20,70,30,0">
                 <Image 
-                    Source="https://cdn-icons-png.flaticon.com/512/5222/5222963.png"
-                    HeightRequest="120"/>
+                    Source="omlet.png"
+                    HeightRequest="120"
+                    HorizontalOptions="Center"/>
                 <Label
                     Text="Яичница"
                     FontSize="40"
@@ -16,45 +17,45 @@
                 <Label Text="Ингридиенты:"
                        Margin="0, 20, 0, 0"
                        FontSize="25"/>
-                <StackLayout Orientation="Horizontal">
+                <AbsoluteLayout>
                     <Image Source="https://cdn-icons-png.flaticon.com/512/5222/5222963.png" 
                            HeightRequest="70"
-                           HorizontalOptions="Start"/>
-                    <Label Text="1+"
-                           VerticalOptions="Center"
-                           Margin="10,0,0,0"
-                           FontSize="30"/>
-                </StackLayout>
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                    <Label Text="X1"
+                           FontSize="30"
+                           VerticalOptions="Center"/>
+                </AbsoluteLayout>
+
                 <Label Text="Приготовление:"
                        Margin="0, 20, 0, 0"
                        FontSize="25"/>
                 <RadioButton
-                    Content="Налейте растительное масло в чистую сковороду и поставьте на огонь"
+                    Content=" Налейте растительное масло в чистую сковороду и поставьте на огонь"
                     />
                 <RadioButton
-                    Content="Разбейте яйца и вылейте их на сковороду, стараясь не повредить желток"
+                    Content=" Разбейте яйца и вылейте их на сковороду, стараясь не повредить желток"
                     />
                 <RadioButton
-                    Content="Посолите по вкусу и жарьте 2-3 минуты. Лопаткой аккуратно переложите яичницу на тарелку и подавайте на стол"
+                    Content=" Посолите по вкусу и жарьте 2-3 минуты. Лопаткой аккуратно переложите яичницу на тарелку и подавайте на стол"
                     />
 
                 <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
                     <Grid>
                         <GraphicsView x:Name="ProgressView"
-                          BackgroundColor="{StaticResource Primary}"
+                          
                           HeightRequest="100"
                           WidthRequest="100"/>
                         <Button x:Name="ProgressButton"
-                            Text=""
-                            FontSize="32"
+                            Text="Старт"
+                            FontSize="16"
                             FontFamily="fa-regular"
                             HeightRequest="80"
                             WidthRequest="80"
                             CornerRadius="40"
                             HorizontalOptions="Center"
                             Clicked="StartButton_OnClicked"
-                            BorderWidth="0"
-                            BackgroundColor="{StaticResource Primary}"/>
+                            BorderWidth="0"/>
                     </Grid>
                     <Button x:Name="ResetButton"
                         Text="Reset"
