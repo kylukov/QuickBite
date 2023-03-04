@@ -20,10 +20,10 @@ public partial class ChooseProducts : ContentPage
         Console.WriteLine(sql_input);
     }
 
-    private /* async */ void GotoShoppingList(object sendet, EventArgs e)
+    private async void GotoShoppingList(object sendet, EventArgs e)
     {
-        Console.WriteLine(sql_input.Substring(0, sql_input.Length - 1));
-
+        await Shell.Current.GoToAsync("ReceptPage");
+        // Console.WriteLine(sql_input.Substring(0, sql_input.Length - 1));
         // Data.Database db = new Data.Database();
         // Datab.find_receipt(sql_input.Substring(0, sql_input.Length - 1));
     }

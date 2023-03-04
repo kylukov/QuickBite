@@ -17,15 +17,16 @@
                 <Label Text="Ингридиенты:"
                        Margin="0, 20, 0, 0"
                        FontSize="25"/>
-                <AbsoluteLayout>
+                <StackLayout Orientation="Horizontal">
                     <Image Source="https://cdn-icons-png.flaticon.com/512/5222/5222963.png" 
                            HeightRequest="70"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"/>
                     <Label Text="X1"
                            FontSize="30"
+                           Margin="10, 0, 0, 0"
                            VerticalOptions="Center"/>
-                </AbsoluteLayout>
+                </StackLayout>
 
                 <Label Text="Приготовление:"
                        Margin="0, 20, 0, 0"
@@ -57,10 +58,7 @@
                             Clicked="StartButton_OnClicked"
                             BorderWidth="0"/>
                     </Grid>
-                    <Button x:Name="ResetButton"
-                        Text="Reset"
-                        Clicked="ResetButton_OnClicked"
-                        TextColor="WhiteSmoke"/>
+
                 </VerticalStackLayout>
             </StackLayout>
         </VerticalStackLayout>

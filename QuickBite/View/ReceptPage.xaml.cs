@@ -44,7 +44,6 @@ public partial class ReceptPage : ContentPage
             int secondsRemaining = (int)(_duration - elapsedTime.TotalSeconds);
 
             ProgressButton.Text = $"{secondsRemaining}";
-
             _progress = Math.Ceiling(elapsedTime.TotalSeconds);
             _progress %= _duration;
             _progressArc.Progress = _progress / _duration;
