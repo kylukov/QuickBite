@@ -53,7 +53,7 @@ public partial class ReceptPage : ContentPage
             if (secondsRemaining == 0)
             {
                 _cancellationTokenSource.Cancel();
-                var request = new NotificationRequest
+                /*var request = new NotificationRequest
                 {
                     NotificationId = 1,
                     Title = "Ваше блюдо готов",
@@ -62,7 +62,7 @@ public partial class ReceptPage : ContentPage
                     BadgeNumber = 42,
                     CategoryType = NotificationCategoryType.Reminder
                 };
-                LocalNotificationCenter.Current.Show(request);
+                LocalNotificationCenter.Current.Show(request);*/
                 return;
             }
 
