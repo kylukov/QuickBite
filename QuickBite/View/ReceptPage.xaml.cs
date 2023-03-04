@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using System.Threading;
+using Plugin.LocalNotification;
 
 namespace QuickBite;
 
@@ -52,6 +53,16 @@ public partial class ReceptPage : ContentPage
             if (secondsRemaining == 0)
             {
                 _cancellationTokenSource.Cancel();
+                var request = new NotificationRequest
+                {
+                    NotificationId = 1,
+                    Title = "Ваше блюдо готов",
+                    Subtitle = "Не забудьте про ваше блюдо",
+                    Description = "It's me",
+                    BadgeNumber = 42,
+                    CategoryType = NotificationCategoryType.Reminder
+                };
+                LocalNotificationCenter.Current.Show(request);
                 return;
             }
 
