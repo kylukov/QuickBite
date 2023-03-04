@@ -6,8 +6,8 @@
         <Button Text="Hello"
                 Grid.Column="1"
                 VerticalOptions="End"
-                Margin="0, 0, 20, 70"
-                HeightRequest="20"
+                Margin="0, 0, 20, 30"
+                HeightRequest="10"
                 Grid.Row="2"
                 Clicked="GotoShoppingList"
                 HorizontalOptions="End"/>
@@ -15,32 +15,30 @@
             <VerticalStackLayout Grid.Column="1" Grid.Row="1">
                     
 
-                <CollectionView x:Name="ProductCollection" ItemsSource="{Binding Products}">
-                    <CollectionView.ItemsLayout>
-                        <LinearItemsLayout Orientation="Vertical" ItemSpacing="15"/>
-                    </CollectionView.ItemsLayout>
+            <CollectionView x:Name="ProductCollection" ItemsSource="{Binding Products}">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="15"/>
+                </CollectionView.ItemsLayout>
 
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                            <StackLayout >
-                                    <Image HorizontalOptions="Center"
-                                           WidthRequest="100"
-                                           HeightRequest="100"
-                                           Source="{Binding Path}"/>
-                                    <Button Text="{Binding Title}"
-                                            BackgroundColor="White"
-                                            TextColor="Black"
-                                            FontSize="27"
-                                            HorizontalOptions="Center"
-                                            Clicked="AddToShoppingList"
-                                            />
-                                </StackLayout>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                                <Image HorizontalOptions="Center"
+                                       WidthRequest="100"
+                                       HeightRequest="100"
+                                       Source="{Binding Path}"/>
+                                <Button Text="{Binding Title}"
+                                        BackgroundColor="White"
+                                        TextColor="Black"
+                                        FontSize="27"
+                                        HorizontalOptions="Center"
+                                        Clicked="AddToShoppingList"
+                                        />
+                            </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
             
-            </VerticalStackLayout>
-        </ScrollView>
-    </Grid>
-
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
