@@ -109,7 +109,4 @@
 	<ItemGroup>
 	  <EditorConfigFiles Remove="C:\Users\KULAN\Desktop\QuickBite\QuickBite\Platforms\iOS\.editorconfig" />
 	</ItemGroup>
-	<ItemGroup>
-	  <None Include="C:\Users\KULAN\Desktop\QuickBite\QuickBite\Platforms\iOS\.editorconfig" />
-	</ItemGroup>
 </Project>

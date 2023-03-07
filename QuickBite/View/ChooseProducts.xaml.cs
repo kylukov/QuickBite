@@ -1,4 +1,3 @@
-using QuickBite.DataBase;
 using QuickBite.ViewModel;
 namespace QuickBite;
 public partial class ChooseProducts : ContentPage
@@ -23,8 +22,5 @@ public partial class ChooseProducts : ContentPage
     private void GotoShoppingList(object sendet, EventArgs e)
     {
         Console.WriteLine(sql_input.Substring(0, sql_input.Length - 1));
-
-        // Data.Database db = new Data.Database();
-        // Datab.find_receipt(sql_input.Substring(0, sql_input.Length - 1));
     }
 }
